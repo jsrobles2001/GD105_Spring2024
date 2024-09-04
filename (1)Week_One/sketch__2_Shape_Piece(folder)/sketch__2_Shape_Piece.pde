@@ -4,18 +4,25 @@ background (128, 32, 96);
 int numsize = 750;
 
 strokeWeight(10);
-// Horizontal
+// horizontal
 line (numsize / 2 - 75, numsize / 2 - 50,
 numsize / 2 - 75, numsize / 2 + 250);
 line (numsize / 2 + 75, numsize / 2 - 50,
 numsize / 2 + 75, numsize / 2 + 250);
-// Vertical
+// vertical
 line (numsize / 6 + 50, numsize / 2 + 150,
 numsize / 1.25 - 25, numsize / 2 + 150);
 line (numsize / 1.25 - 25, numsize / 2 + 50,
 numsize / 6 + 50, numsize / 2 + 50);
 
-// Your move next...
+// your move next...
 noFill();
 strokeWeight(5);
 circle (numsize / 2, numsize / 2 - 5, 75);
+// umm...
+square(numsize / 2 - 175, numsize / 2 - 45, 75);
+// maybe we should just play chess...
+
+if (frameCount == 1){
+  save("sketch__2_Shape_Piece.pde");
+}
