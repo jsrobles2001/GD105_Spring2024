@@ -1,8 +1,14 @@
+PFont bell;
+
 void setup() {
-size (500, 500);
-background (32, 128, 64);
+  size (500, 500);
+  background (32, 128, 64);
+  bell = loadFont("BellMTItalic-48.vlw");
+  textFont(bell);
 }
 
-void text() {
-print("Hello, my baby! Hello, my honey! Hello, my ragtime gal!");
+void draw() {
+  textSize(25);
+  fill(75, 175, 50);
+  text("Hello, my baby!\nHello, my honey!\nHello, my ragtime gal!", 20, 40);
 }
