@@ -3,7 +3,7 @@ PFont sthone;
 
 void setup() {
   size(600, 400);
-  
+  background(0);
 }
 
 void firstfont(){
@@ -12,7 +12,6 @@ void firstfont(){
 }
 
 void draw() {
-    background(0);
   firstfont();
   fill(#ff0000); // red color
   rect(600 / 4, -25, 112.5, 312.5); // red box
@@ -42,6 +41,6 @@ void secondfont(){
 void snapshot() {
 
   if (frameCount == 1){
-    save("sketch__2_Shape_Piece.png");
+    save("sketch__4_Replica_Piece.png");
   }
 }

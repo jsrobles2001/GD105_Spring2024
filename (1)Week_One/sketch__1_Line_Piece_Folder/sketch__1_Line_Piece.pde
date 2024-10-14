@@ -29,6 +29,6 @@ void draw() {
 void snapshot() {
 
   if (frameCount == 1){
-    save("sketch__2_Shape_Piece.png");
+    save("sketch__1_Line_Piece.png");
   }
 }
