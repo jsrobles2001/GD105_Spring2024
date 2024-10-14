@@ -23,4 +23,12 @@ void draw() {
   strokeWeight(10);
   line(corner.x, corner.y, 170, 125);
   line(corner.x, corner.y, 160, 125);
+  snapshot();
+}
+
+void snapshot() {
+
+  if (frameCount == 1){
+    save("sketch__2_Shape_Piece.png");
+  }
 }

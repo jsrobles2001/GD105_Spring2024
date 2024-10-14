@@ -31,9 +31,17 @@ void draw() {
   secondfont(); // different font
   textSize(60);
   text("1", 475, 307.5);
+  snapshot();
 }
 
 void secondfont(){
   sthone = loadFont("Candara-BoldItalic-48.vlw");
   textFont(sthone);
+}
+
+void snapshot() {
+
+  if (frameCount == 1){
+    save("sketch__2_Shape_Piece.png");
+  }
 }
