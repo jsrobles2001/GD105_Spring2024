@@ -1,10 +1,15 @@
-PFont mario;
+PImage dancefloor;
+PImage mario;
+PImage spongebob;
+PImage waluigi;
 
 void setup() {
   
   size(750, 750);
-  mario = loadFont("Mario.png");
-  textFont(mario);
+  dancefloor = loadImage("Dance Floor.webp");
+  mario = loadImage("Mario.png");
+  spongebob = loadImage("Spongebob.png");
+  waluigi = loadImage("Waluigi.png");
 }
 
 void draw() {
