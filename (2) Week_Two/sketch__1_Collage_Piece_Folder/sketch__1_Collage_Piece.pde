@@ -18,4 +18,13 @@ void draw() {
   image(mario, 200, 475, 150, 150); // "YAHOO! Can't party harder than-a-me!"
   image(spongebob, 400, 550, 200, 200); // "Who put YOU on the dance floor, UGH!"
   image(waluigi, 350, 300, 200, 200); // "Try these moves on for-a-size, WAHAHAH!"
+  
+  snapshot();
+}
+
+void snapshot() {
+  
+if (frameCount == 1){
+    save("sketch__1_Collage Piece.png");
+  }
 }
