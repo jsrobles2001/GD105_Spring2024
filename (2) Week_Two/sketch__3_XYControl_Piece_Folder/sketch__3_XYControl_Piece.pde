@@ -1,4 +1,4 @@
-float velo = 0.0025;
+float velo = 1.0;
 float max_velo = 5.0;
 float pos_x;
 float pos_y;
@@ -18,10 +18,7 @@ void setup() {
   shadow_y = height / HALF_PI;
 }
 
-
-  
 void draw() {
-  
   background(0);
   noStroke(); // strokes are ugly for animations like this
   fill(255);
@@ -30,23 +27,17 @@ void draw() {
   fill(255, 0, 64);
   circle(pos_x, pos_y, ball); // ball can't be too TOO high
   
-  boolean hitShadow = pos_y > shadow_y;
-  // WHEN the ball touches the shadow
-  // boolean hitPeakBounce =
+  if (pos_y + ball / 2 > shadow_y || pos_y < ball / 2) {
+    velo *= -1;
+  } // if the ball hits the shadow, go up
+  // if the ball hits the width of the window, go down
   
-  
-  
-  if (hitShadow) {
-   
-    pos_y--;
-    
+  if (velo > max_velo) {
+    velo = max_velo;
+  } else {
+      velo++;
   }
   
-  else {
-    
-    pos_y++;
-    
-  }
-  
+  pos_y += velo;
   
 }
