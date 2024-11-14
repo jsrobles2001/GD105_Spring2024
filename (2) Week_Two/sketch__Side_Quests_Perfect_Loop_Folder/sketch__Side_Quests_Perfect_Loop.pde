@@ -1,1 +1,1 @@
-// a red ball that moves across the screen
+// spinning a cog with a symbol
