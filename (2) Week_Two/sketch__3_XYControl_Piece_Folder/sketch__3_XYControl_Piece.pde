@@ -12,10 +12,11 @@ float shadow_height = 25;
 
 void setup() {
   size(500, 750);
-  pos_y = height / TAU;
+  pos_y = height / PI;
   pos_x = width / 2; // the red ball's position
   shadow_x = width / 2;
   shadow_y = height / HALF_PI;
+  float d = dist(0, height / TAU, width, height / TAU);
 }
 
 void draw() {
