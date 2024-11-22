@@ -2,16 +2,26 @@ void setup() {
   size(500, 500);
   background(255);
   frameRate(1); // very slow frame rate
+  colorMode(HSB, 360, 1, 1); // 360 circle light color wheel
+  rectMode(CENTER);
+  noStroke();
 }
 
 void draw() {
-  fill(0, 0, int(random(255)));
-  triangle(int(random(500)), int(random(500)), int(random(500)),
-    int(random(500)), int(random(500)), int(random(500))); // different blue triangles
-  fill(int(random(255)), 0, 0);
-  square(int(random(500)), int(random(500)), int(random(500))); // different red squares
-  fill(int(random(255)), int(random(510)), 0);
-  circle(int(random(500)), int(random(500)), int(random(500))); // red, green, or in between circles
+  
+  int variance = 15;
+  
+  fill(90 - variance, 0 + variance, 90);
+  // different blue triangles
+  triangle(random(width), random(height), 
+  random(width), random(height), 
+  random(width), random(height)); 
+  fill(180 - variance, 180 + variance, 180);
+  // different red squares
+  square(random(width), random(height), random(width)); 
+  fill(225 - variance, 225 + variance, 225);
+  // red, green, or in between circles
+  circle(random(width), random(height), random(width));
 
 snapshot();
 }
