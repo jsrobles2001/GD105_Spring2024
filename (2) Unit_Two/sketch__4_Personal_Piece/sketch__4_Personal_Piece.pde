@@ -1,6 +1,6 @@
 // multiplcation is used instead of division for smooth movement
 float velo = 1.0;
-int max_velo = 10;
+float max_velo = 15.0;
 float pos_x;
 float pos_y;
 // size isn't declared yet, so define in setup so it isn't missed placed
