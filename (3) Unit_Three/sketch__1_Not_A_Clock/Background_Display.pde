@@ -3,7 +3,7 @@ PImage clouds;
 
 void background_display() {
  
-  columns = loadImage("Greek_Column.jpg");
+  columns = loadImage("Greek_Column.png");
   image(columns, 0, height - 400, 200, 400);
   image(columns, width - 200, height -400, 200, 400);
   clouds = loadImage("Greek_Cloud.png");
