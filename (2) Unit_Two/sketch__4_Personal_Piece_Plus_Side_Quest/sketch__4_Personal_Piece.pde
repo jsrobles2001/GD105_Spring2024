@@ -1,6 +1,6 @@
 // multiplcation is used instead of division for smooth movement
 float velo = 1.0;
-float max_velo = 15.0;
+float max_accel = 15.0;
 float pos_x;
 float pos_y;
 // size isn't declared yet, so define in setup so it isn't missed placed
@@ -38,10 +38,9 @@ void draw() {
   // if the ball hits the width of the window, go down
   pos_y += velo;
   
-  if (velo > max_velo) {
-    velo = max_velo;
+  if (velo > max_accel) {
+    velo = max_accel;
   } else {
     velo++;
   }
-  println(velo);
 }
