@@ -32,7 +32,7 @@ void draw() {
   circle(pos_x, pos_y, ball); // ball can't be too TOO high
   
   if (pos_y + ball * 0.50 > shadow_y || pos_y < ball * 0.50) {
-    velo = -25; // the kick that gets muitplited to make the ball bounce high
+    velo = -24; // the kick that gets muitplited to make the ball bounce high
   }
   // if the ball hits the shadow, go up
   // if the ball hits the width of the window, go down
